@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheat Sheet</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .demo {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 8px;
+        }
+
+        img {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Cheat Sheet: HTML Tags dan Atribut yang Sering Digunakan</h1>
+
+    <section>
+        <h2>&lt;header&gt;, &lt;main&gt;, &lt;footer&gt;</h2>
+        <p><strong>Fungsi:</strong> Digunakan untuk menyusun struktur dasar halaman (layout).</p>
+        <div class="demo">
+            <header>Ini bagian header (biasanya navbar/logo)</header>
+            <main>Ini konten utama halaman</main>
+            <footer>Ini bagian footer (biasanya copyright/link sosial)</footer>
+        </div>
+    </section>
+
+    <section>
+        <h2>&lt;h1&gt; sampai &lt;h6&gt;</h2>
+        <p><strong>Fungsi:</strong> Menandai judul dari konten, penting untuk SEO dan struktur konten.</p>
+        <div class="demo">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </div>
+    </section>
+
+    <section>
+        <h2>&lt;p&gt;, &lt;br&gt;, &lt;hr&gt;</h2>
+        <p><strong>Fungsi:</strong> Menampilkan paragraf, garis baru, dan garis horizontal.</p>
+        <div class="demo">
+            <p>Ini paragraf pertama.</p>
+            <p>Paragraf kedua dengan <br> baris baru.</p>
+            <hr>
+            <p>Setelah garis pemisah.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>&lt;a href=""&gt;</h2>
+        <p><strong>Fungsi:</strong> Membuat tautan ke halaman lain.</p>
+        <div class="demo">
+            <a href="https://www.google.com" target="_blank">Kunjungi Google</a>
+        </div>
+    </section>
+
+    <section>
+        <h2>&lt;img src="" alt=""&gt;</h2>
+        <p><strong>Fungsi:</strong> Menampilkan gambar. <code>alt</code> akan muncul jika gambar gagal dimuat.</p>
+        <div class="demo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                alt="Contoh Gambar">
+        </div>
+    </section>
+
+    <section>
+        <h2>&lt;ul&gt; unordered list, &lt;ol&gt; ordered list, &lt;li&gt; list item</h2>
+        <p><strong>Fungsi:</strong> Menampilkan daftar (bullet/angka).</p>
+        <div class="demo">
+            <h3>&lt;ul&gt;</h3>
+            <ul>
+                <li>Item pertama</li>
+                <li>Item kedua</li>
+            </ul>
+            <h3>&lt;ol&gt;</h3>
+            <ol>
+                <li>Langkah 1</li>
+                <li>Langkah 2</li>
+            </ol>
+        </div>
+    </section>
+
+    <section>
+        <h2>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</h2>
+        <p><strong>Fungsi:</strong> Menampilkan data dalam bentuk tabel.</p>
+        <div class="demo">
+            <table border="1">
+                <tr>
+                    <th>Nama</th>
+                    <th>Umur</th>
+                </tr>
+                <tr>
+                    <td>Ani</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>Budi</td>
+                    <td>25</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>&lt;form&gt; dan input lainnya</h2>
+        <p><strong>Fungsi:</strong> Untuk input data pengguna.</p>
+        <div class="demo">
+            <form>
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan" name="pesan" rows="3" cols="30"></textarea><br><br>
+
+                <input type="submit" value="Kirim">
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <h2>Atribut Khusus yang Penting</h2>
+        <ul>
+            <li><code>id</code> – Penanda unik, biasanya untuk JavaScript.</li>
+            <li><code>class</code> – Untuk styling dengan CSS.</li>
+            <li><code>name</code> – Biasanya dipakai dalam form.</li>
+            <li><code>placeholder</code> – Teks petunjuk pada input.</li>
+            <li><code>type</code> – Jenis input (text, email, password, dll).</li>
+            <li><code>required</code> – Harus diisi sebelum form dikirim.</li>
+            <li><code>target="_blank"</code> – Buka link di tab baru.</li>
+            <li><code>alt</code> – Teks alternatif gambar (penting untuk SEO & aksesibilitas).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Bonus: &lt;div&gt; dan &lt;span&gt;</h2>
+        <p><strong>Fungsi:</strong> Elemen pembungkus (tanpa arti khusus), untuk styling dan layout.</p>
+        <div class="demo">
+            <div style="background-color: lightblue;">Ini div digunakan untuk membungkus konten, biasaya untuk layouting</div>
+            <p>Teks dengan <span style="color:red;">span berwarna merah</span> di dalamnya. Biasa digunakan untuk pemisahan text/kata dari yang lainnya</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Catatan</h2>
+    </section>
+</body>
+
+</html>
